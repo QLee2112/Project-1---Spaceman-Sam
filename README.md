@@ -5,9 +5,7 @@ Description: For the Spaceman Sam game, your goal is to correcly guess the lette
 
 Technologies Used: JavaScript, HTML, CSS
 
-Wireframe: <figure>
-                <img src="https://www.figma.com/file/R39LdBiPGAo34PndSX2xIG/Spaceman-Wireframe?node-id=0%3A1&t=Ef9bFbw7tcx4XLYi-0"
-            </figure>
+Wireframe: ![Wireframe](Wireframe.png)
 
 
 
