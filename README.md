@@ -23,14 +23,14 @@ MVP:
 11. As a user, I want to reset the bank of letters when 'play again' is clicked
 
 V1:
-12. As a user, I want to be able to upload a file as the spaceman sprite
-13. As a user, I want to be able to change the text color of the goal word and letters in the bank of letters
-14. As a user, I want to be able to click the 'hint' button
+1. As a user, I want to be able to upload a file as the spaceman sprite
+2. As a user, I want to be able to change the text color of the goal word and letters in the bank of letters
+3. As a user, I want to be able to click the 'hint' button
 
 V2:
-15. As a user, i want to be able to change the background color of the game board
-16. As a user, I want to be able to see how many games I have won
-17. As a user, I want to be able to see how many games I have lost
+1. As a user, i want to be able to change the background color of the game board
+2. As a user, I want to be able to see how many games I have won
+3. As a user, I want to be able to see how many games I have lost
 
 Psuedo Code:
 MVP:
@@ -71,31 +71,31 @@ MVP:
     2. Add an event listener that clears all divs and selects a new value for the currentGoalWord
     3. Selects new random letters and populates them in the letterBank
 
-V1:
-12. As a user, I want to be able to upload a file as the spaceman sprite
+V1
+1. As a user, I want to be able to upload a file as the spaceman sprite
     1. Create an input box on the starting page
     2. Have the input type of input box
     3. Have the input line add a new URL that changes the sprite of Spaceman Sam
-13. As a user, I want to be able to change the text color of the goal word and letters in the bank of letters
+2. As a user, I want to be able to change the text color of the goal word and letters in the bank of letters
     1. Create a div with an ID of colorPalette
     2. Have an unorder list of different color options
     3. Create a button for each item of the ordered list that corresponds to a color
     4. Create an event listener for each button that changes the color text of the currentGoalWord to whatever color button is selected
-14. As a user, I want to be able to click the 'hint' button
+3. As a user, I want to be able to click the 'hint' button
     1. Create a button with an ID of hintButton
     2. Add an event listener that changes 3 letters, 2 random letters with a letter value not equal to a letter value in the currentGoalWord and 1 letter that does have a letter value equal to a letter vale in the currentGoalWord, to yellow
 
-V2:
-15. As a user, i want to be able to change the background color of the game board
+V2
+1. As a user, I want to be able to change the background color of the game board
     1. Add a div with the ID of backgroundColor
     2. Add an unorder list of different color options
     3. Make each unordered list item a button
     4. Add an event listener to each button that changes the background color of the play screen when clicked
-16. As a user, I want to be able to see how many games I have won
+2. As a user, I want to be able to see how many games I have won
     1. Add a div with an ID of wins
     2. Create a variable, totalWins, that keeps track of how many times that if-win condition is triggered.
     3. Inserts the value of totalWins into the wins div
-17. As a user, I want to be able to see how many games I have lost
+3. As a user, I want to be able to see how many games I have lost
     1. Add a div with an ID of losses
     2. Create a variable, totalLosses, that keeps track of how many times that if-win condition is not triggered.
     3. Inserts the value of totalLosses into the losses div
