@@ -1,7 +1,7 @@
 Game Title: Spaceman Sam
 
 
-Description: For the Spaceman Sam game, you goal is to correcly guess the letters for the bank of letters that will help fill in the blank spaces below sam and the spaceship. You have 10 guess to find the word and correct guess doe not count towards your remaining guesses. 
+Description: For the Spaceman Sam game, you goal is to correcly guess the letters for the bank of letters that will help fill in the blank spaces below sam and the spaceship. You have 10 guess to find the word and correct guess do not count towards your remaining guesses. 
 
 Technologies Used: JavaScript, HTML, CSS
 
