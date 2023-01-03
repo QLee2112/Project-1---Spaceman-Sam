@@ -74,4 +74,5 @@ V2:
     1. Add a div with an ID of losses
     2. Create a variable, totalLosses, that keeps track of how many times that if-win condition is not triggered.
     3. Inserts the value of totalLosses into the losses div
+
 # Project-1---Spaceman-Sam
