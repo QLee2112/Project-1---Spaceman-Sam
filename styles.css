@@ -17,8 +17,13 @@
     display: inline-flex;
     padding-left: 10px;
     padding-right: 10px;
+}
+#message-box-header {
     display: none;
 }
-.headers {
+#letter-bank-header {
+    display: none;
+}
+#goal-word-header {
     display: none;
 }
