@@ -10,17 +10,17 @@ Wireframe: ![Wireframe](Wireframe.png)
 
 
 MVP:
-1. As a user, I want to be able to click the 'play' button
-2. As a user, I want the game to start when play is clicked
-3. As a user, I want a random bank of letters to generate when 'play' is clicked
-4. As a user, I want a random 5-10 letter word(aka goal word) to be generated when I click 'play'
-5. As a user, I want to be able to click a letter from the letter bank 
-6. As a user, I want to see the letter appear on the "______" lines if the letter is in the goal word
-7. As a user, I want to recieve a 'wrong letter message' when clicking a letter that is not in the goal word
+-1. As a user, I want to be able to click the 'play' button
+-2. As a user, I want the game to start when play is clicked
+-3. As a user, I want a random bank of letters to generate when 'play' is clicked
+-4. As a user, I want a random 5-10 letter word(aka goal word) to be generated when I click 'play'
+-5. As a user, I want to be able to click a letter from the letter bank 
+-6. As a user, I want to see the letter appear on the "______" lines if the letter is in the goal word
+-7. As a user, I want to recieve a 'wrong letter message' when clicking a letter that is not in the goal word
 8. As a user, I want part of a spaceship to appear above the spaceman when clicking a letter that is not in the goal word
 9. As a user, I want a lose condition to trigger if the goal word is not filled out after clicking 11 letters from the word bank
 10. As a user, I want a win confition to trigger if the goal word is filled out before clicking 11 letters from the word bank
-11. As a user, I want to reset the bank of letters when 'play again' is clicked
+-11. As a user, I want to reset the bank of letters when 'play again' is clicked
 
 V1:
 1. As a user, I want to be able to upload a file as the spaceman sprite
