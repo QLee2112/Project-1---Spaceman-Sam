@@ -11,20 +11,14 @@ Technologies Used: JavaScript, HTML, CSS
 
 ![Ending Game Screen](/Imgs/Spaceman_Game_Screen_End.png)
 
+Getting Started:
 
+Clikc the link <a href = https://qlee2112.github.io/Project-1---Spaceman-Sam target='_blank'>here</a> to play
+Upon arriving at the home page, press play game to start
+After clicking the play button, you need to guess from the letter bank to find the correct letters.
+When you have selected all the correct letters, click the check answer button to see if you got the correct word
 
-MVP:
-1. As a user, I want to be able to click the 'play' button
-2. As a user, I want the game to start when play is clicked
-3. As a user, I want a random bank of letters to generate when 'play' is clicked
-4. As a user, I want a random 5-10 letter word(aka goal word) to be generated when I click 'play'
-5. As a user, I want to be able to click a letter from the letter bank 
-6. As a user, I want to see the letter appear on the "______" lines if the letter is in the goal word
-7. As a user, I want to recieve a 'wrong letter message' when clicking a letter that is not in the goal word
-8. As a user, I want part of a spaceship to appear above the spaceman when clicking a letter that is not in the goal word
-9. As a user, I want a lose condition to trigger if the goal word is not filled out after clicking 7 letters from the word bank
-10. As a user, I want a win confition to trigger if the goal word is filled out before clicking 7 letters from the word bank
-11. As a user, I want to reset the bank of letters when 'play again' is clicked
+Next :Steps
 
 V1:
 1. As a user, I want to be able to upload a file as the spaceman sprite
