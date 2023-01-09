@@ -22,6 +22,10 @@ const title = document.querySelector('#title')
 const subTitle = document.querySelector('#subtitle')
 const leftArm = document.querySelector('#left-arm')
 const rightArm = document.querySelector('#right-arm')
+const helmet = document.querySelector('#helmet')
+const stickBody = document.querySelector('#stick-body')
+const leftLeg = document.querySelector('#left-leg')
+const rightLeg = document.querySelector('#right-leg')
 const spaceship = document.querySelector('#spaceship')
 const goalWordBank = ['declare', 'elite', 'regulate', 'deficit', 'confirm', 'literally', 'admission', 'enterprise', 'shrug', 'steal', 'assert', 'attempt', 'quick', 'afternoon', 'lower', 'tattoo', 'Chinese', 'taste', 'regular', 'recruit', 'bread', 'objective', 'profit', 'figure', 'American', 'approach', 'decade', 'asset', 'involve', 'tear', 'painting', 'investment', 'church', 'inflation', 'museum', 'guess', 'preference', 'illustrate', 'participate', 'person', 'amount', 'recognize', 'beside', 'living', 'society', 'throughout', 'towards', 'modern']
 let goalWord = goalWordBank[Math.floor(Math.random()*(goalWordBank.length))]
@@ -317,6 +321,31 @@ checkAnswerButton.addEventListener('click', () => {
         document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
     }
 })
+
+while(guessCount > -1 && guessCount < 2) {
+    leftLeg.style.display = 'block'
+}
+while(guessCount > 1 && guessCount < 3) {
+    rightLeg.style.display = 'block'
+}
+while(guessCount > 2 && guessCount < 3) {
+    stickBody.style.display = 'block'
+}
+while(guessCount > 3 && guessCount < 4) {
+    rightArm.style.display = 'block'
+}
+while(guessCount > 4 && guessCount < 5) {
+    leftArm.style.display = 'block'
+}
+while(guessCount > 5 && guessCount < 6) {
+    helmet.style.display = 'block'
+}
+
+
+
+
+
+
 
 
 
