@@ -8,26 +8,37 @@
     <title>Spaceman Sam</title>
 </head>
 <body>
+    <h1 id = title>Spaceman Sam</h1>
+    <h4 id = subtitle>Bedrock Edition</h4>
     <button id = play-button>Press to Play!</button>
+    <img id = spaceship src= '/Imgs/Spaceship.jpg'>
+    <img id = left-arm src = '/Imgs/LeftArm.png'>
+    <img id = right-arm src = '/Imgs/RightArm.png'>
+    <img id = stick-body src = '/Imgs/VerticalLine.png'>
+    <img id = helmet src = '/Imgs/Helmet.png'>
+    <img id = left-leg src = '/Imgs/LeftLegs.png'>
+    <img id = right-leg src = '/Imgs/RightLegs.png'>
     <h2 id = letter-bank-header>Letter Bank</h2>
     <ul id = letter-bank>
-        <li><button id = random-letter-one-button></button></li>
-        <li><button id = random-letter-two-button></button></li>
-        <li><button id = random-letter-three-button></button></li>
-        <li><button id = random-letter-four-button></button></li>
-        <li><button id = random-letter-five-button></button></li>
-        <li><button id = random-letter-six-button></button></li>
-        <li><button id = random-letter-seven-button></button></li>
-        <li><button id = random-letter-eight-button></button></li>
-        <li><button id = random-letter-nine-button></button></li>
-        <li><button id = random-letter-ten-button></button></li>
+        <li><button class = letter-button id = random-letter-one-button></button></li>
+        <li><button class = letter-button id = random-letter-two-button></button></li>
+        <li><button class = letter-button id = random-letter-three-button></button></li>
+        <li><button class = letter-button id = random-letter-four-button></button></li>
+        <li><button class = letter-button id = random-letter-five-button></button></li>
+        <li><button class = letter-button id = random-letter-six-button></button></li>
+        <li><button class = letter-button id = random-letter-seven-button></button></li>
+        <li><button class = letter-button id = random-letter-eight-button></button></li>
+        <li><button class = letter-button id = random-letter-nine-button></button></li>
+        <li><button class = letter-button id = random-letter-ten-button></button></li>
     </ul>
     <h2 id = goal-word-header>Goal Word</h2>
         <p id = goal-word-box>Your Blanks</p>
+    <button id =check-answer-button>Check Answer</button>
     <button id = play-again-button>Play Again</button>
-    <button id = hint-button>Get a Hint</button>
-    <h2 id = message-box-header>Message Box</h2>
-    <p id = message-box></p>
+    <div id =message-box-container>
+        <h2 id = message-box-header>Message Box</h2>
+        <p id = message-box></p>
+    </div>
 </body>
 <script src="script.js"></script>
 </html>

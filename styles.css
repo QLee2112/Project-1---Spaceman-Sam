@@ -1,29 +1,103 @@
-#play-button {
+#title {
     text-align: center;
 }
-#hint-button {
-    display: none;
+#subtitle {
+    text-align: center;
+}
+#play-button {
+    position: absolute;
+    left: 910px;
 }
 #play-again-button {
     display: none;
 }
 #letter-bank {
     display: none;
+    list-style-type: none;
+}
+.letter-button{
+    width: 25px;
 }
 #goal-word-box {
     display: none;
+    text-align: center;
 }
-.goal-word-empties {
-    display: inline-flex;
-    padding-left: 10px;
-    padding-right: 10px;
+#message-box {
+    position: absolute;
+    bottom: 400px;
+    left: 1600px;
 }
 #message-box-header {
     display: none;
+    position: absolute;
+    right: 160px;
+    bottom: 440px;
 }
 #letter-bank-header {
     display: none;
 }
 #goal-word-header {
     display: none;
+    text-align: center;
+    top: 140px;
+}
+#check-answer-button {
+    display:none;
+}
+.letter-button {
+    display: flex;
+    flex-direction: column;
+}
+#left-arm {
+    /* display: none; */
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 898px;
+    top: 230px;
+}
+#right-arm {
+    /* display: none; */
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 933px;
+    top: 230px;
+}
+#stick-body {
+    /* display: none; */
+    height: 120px;
+    width: 100px;
+    position: absolute;
+    left: 900px;
+    top: 220px;
+}
+#spaceship {
+    width: 200px;
+    height: 200px;
+    display: none;
+    position: absolute;
+    left: 1300px;
+}
+#left-leg {
+    /* display: none; */
+    height: 80px;
+    position: absolute;
+    left: 899px;
+    top: 337px;
+}
+#right-leg {
+    /* display: none; */
+    height: 80px;
+    position: absolute;
+    left: 923px;
+    top: 337px;
+}
+
+#helmet {
+    /* display: none; */
+    height: 60px;
+    position: absolute; 
+    left: 920px;
+    top: 162px;
 }
