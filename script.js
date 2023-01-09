@@ -1,6 +1,5 @@
 const playButton = document.querySelector('#play-button')
 const letterBank = document.querySelector('#letter-bank')
-const playAgainButton = document.querySelector('#play-again-button')
 const goalWordContainer = document.querySelector('#goal-word-box')
 const messageBoxHeader = document.querySelector('#message-box-header')
 const messageBox = document.querySelector('message-box')
@@ -54,7 +53,6 @@ const addGoalLetters = () => {
         letterBank.appendChild(goalLetterButton)
         goalLetterButton.setAttribute('id', 'goal-letter-button-' + (i + 1))
         goalLetterButton.setAttribute('class', 'letter-button')
-        console.log(goalWordArray[i])
         document.getElementById('goal-letter-button-' + (i + 1)).addEventListener('click', () => {
             if(goalWordArray.indexOf(goalLetter) !== -1 ) {
                 document.getElementById('message-box').innerHTML = 'That was a correct letter!'
@@ -125,9 +123,6 @@ playButton.addEventListener('click', () => {
     randomizeLetter()
     makeGoalLines()
     addGoalLetters()
-    console.log(goalWord)
-    console.log(goalWordArray)
-    console.log(goalWordArrayBlanks)
 })
 
 playAgainButton.addEventListener('click', () => {
@@ -137,9 +132,6 @@ playAgainButton.addEventListener('click', () => {
     randomizeWord()
     resetAll()
     addGoalLetters()
-    console.log(goalWord)
-    console.log(goalWordArray)
-    console.log(goalWordArrayBlanks)
 })
 
 randomLetterOne.addEventListener('click', () => {
