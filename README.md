@@ -14,9 +14,9 @@ Technologies Used: JavaScript, HTML, CSS
 Getting Started:
 
 Clikc the link <a href = https://qlee2112.github.io/Project-1---Spaceman-Sam target='_blank'>here</a> to play
-Upon arriving at the home page, press play game to start
+Upon arriving at the home page, press play game to start.
 After clicking the play button, you need to guess from the letter bank to find the correct letters.
-When you have selected all the correct letters, click the check answer button to see if you got the correct word
+When you have selected all the correct letters, click the check answer button to see if you got the correct word.
 
 Next :Steps
 
