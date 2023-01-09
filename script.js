@@ -74,16 +74,6 @@ const addGoalLetters = () => {
     }
 }
 
-const randomizeWord = () => {
-    goalWord = goalWordBank[Math.floor(Math.random()*(goalWordBank.length))]
-    goalWordArray = goalWord.split('')
-    goalWordArrayBlanks = goalWord.split('')
-    for(let i =  0; i < goalWord.length; i++) {
-        goalWordArrayBlanks.splice(i, i, ' _____ ')
-        goalWordContainer.innerHTML = goalWordArrayBlanks.join(' ')
-    }
-}
-
 const makeGoalLines = () => {
     for(let i =  0; i < goalWord.length; i++) {
         goalWordArrayBlanks.splice(i, i, ' _____ ')
@@ -104,33 +94,10 @@ const initialize = () => {
     subTitle.style.display = 'none'
 }
 
-const resetAll = () => {
-    guessCount = 0
-    randomLetterOne.style.color = 'black'
-    randomLetterTwo.style.color = 'black'
-    randomLetterThree.style.color = 'black'
-    randomLetterFour.style.color = 'black'
-    randomLetterFive.style.color = 'black'
-    randomLetterSix.style.color = 'black'
-    randomLetterSeven.style.color = 'black'
-    randomLetterEight.style.color = 'black'
-    randomLetterNine.style.color = 'black'
-    randomLetterTen.style.color = 'black'
-}
-
 playButton.addEventListener('click', () => {
     initialize()
     randomizeLetter()
     makeGoalLines()
-    addGoalLetters()
-})
-
-playAgainButton.addEventListener('click', () => {
-    initialize()
-    randomizeLetter()
-    makeGoalLines()
-    randomizeWord()
-    resetAll()
     addGoalLetters()
 })
 
