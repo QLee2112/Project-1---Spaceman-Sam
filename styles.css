@@ -8,9 +8,6 @@
     position: absolute;
     left: 910px;
 }
-#play-again-button {
-    display: none;
-}
 #letter-bank {
     display: none;
     list-style-type: none;

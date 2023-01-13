@@ -5,7 +5,7 @@ const messageBoxHeader = document.querySelector('#message-box-header')
 const messageBox = document.querySelector('message-box')
 const letterBankHeader = document.querySelector('#letter-bank-header')
 const checkAnswerButton = document.querySelector('#check-answer-button')
-const goalWordHeader = document.querySelector('#goal-word-header')
+const goalWordHeader = document.querySelector('#goal-word-header') 
 const possibleLetters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z']
 const randomLetterOne = document.querySelector('#random-letter-one-button')
 const randomLetterTwo = document.querySelector('#random-letter-two-button')
@@ -64,12 +64,8 @@ const addGoalLetters = () => {
                 }
                 }else {
                 document.getElementById('goal-letter-button-' + (i + 1)).style.color = 'red'
-                guessCount += 1
                 document.getElementById('message-box').innerHTML = 'That was not a correct letter'
             }
-        })
-        playAgainButton.addEventListener('click', () => {
-            letterBank.removeChild(goalLetterButton)
         })
     }
 }
@@ -83,7 +79,6 @@ const makeGoalLines = () => {
 const initialize = () => {
     playButton.style.display = 'none'
     letterBank.style.display = 'block'
-    playAgainButton.style.display = 'block'
     goalWordContainer.style.display = 'block'
     messageBoxHeader.style.display = 'block'
     letterBankHeader.style.display = 'block'
@@ -113,8 +108,22 @@ randomLetterOne.addEventListener('click', () => {
         }
     }else {
         randomLetterOne.style.color = 'red'
-        guessCount += 1
+        guessCount++
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -132,6 +141,20 @@ randomLetterTwo.addEventListener('click', () => {
         randomLetterTwo.style.color = 'red'
         guessCount += 1
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -149,6 +172,20 @@ randomLetterThree.addEventListener('click', () => {
         randomLetterThree.style.color = 'red'
         guessCount += 1
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -166,6 +203,20 @@ randomLetterFour.addEventListener('click', () => {
         randomLetterFour.style.color = 'red'
         guessCount += 1
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -183,6 +234,20 @@ randomLetterFive.addEventListener('click', () => {
         randomLetterFive.style.color = 'red'
         guessCount += 1
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -200,6 +265,20 @@ randomLetterSix.addEventListener('click', () => {
         randomLetterSix.style.color = 'red'
         guessCount += 1
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -217,6 +296,20 @@ randomLetterSeven.addEventListener('click', () => {
         randomLetterSeven.style.color = 'red'
         guessCount += 1
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -232,8 +325,22 @@ randomLetterEight.addEventListener('click', () => {
         }
     }else {
         randomLetterEight.style.color = 'red'
-        guessCount += 1
+        guessCount++
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -249,8 +356,22 @@ randomLetterNine.addEventListener('click', () => {
         }
     }else {
         randomLetterNine.style.color = 'red'
-        guessCount += 1
+        guessCount++
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -266,8 +387,22 @@ randomLetterTen.addEventListener('click', () => {
         }
     }else {
         randomLetterTen.style.color = 'red'
-        guessCount += 1
+        guessCount++
         document.getElementById('message-box').innerHTML = 'That was not a correct letter'
+        if(guessCount === 1){
+            helmet.style.display = 'block'
+        }else if(guessCount === 2) {
+            stickBody.style.display = 'block'
+        }else if(guessCount === 3) {
+            leftArm.style.display = 'block'
+        }else if(guessCount === 4) {
+            rightArm.style.display = 'block'
+        }else if(guessCount === 5) {
+            leftLeg.style.display = 'block'
+        }else if(guessCount === 6) {
+            rightLeg.style.display = 'block'
+            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
+        }
     }
 })
 
@@ -281,25 +416,9 @@ checkAnswerButton.addEventListener('click', () => {
     }
 })
 
-while(guessCount > -1 && guessCount < 2) {
-    leftLeg.style.display = 'block'
-}
-while(guessCount > 1 && guessCount < 3) {
-    rightLeg.style.display = 'block'
-}
-while(guessCount > 2 && guessCount < 3) {
-    stickBody.style.display = 'block'
-}
-while(guessCount > 3 && guessCount < 4) {
-    rightArm.style.display = 'block'
-}
-while(guessCount > 4 && guessCount < 5) {
-    leftArm.style.display = 'block'
-}
-while(guessCount > 5 && guessCount < 6) {
-    helmet.style.display = 'block'
-}
 
+
+console.log(guessCount)
 
 
 
