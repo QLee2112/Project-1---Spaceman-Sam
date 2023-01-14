@@ -418,7 +418,6 @@ checkAnswerButton.addEventListener('click', () => {
 
 
 
-console.log(guessCount)
 
 
 
