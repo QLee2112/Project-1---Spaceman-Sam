@@ -2,6 +2,7 @@ const playButton = document.querySelector('#play-button')
 const letterBank = document.querySelector('#letter-bank')
 const goalWordContainer = document.querySelector('#goal-word-box')
 const messageBoxHeader = document.querySelector('#message-box-header')
+// remove unused `messageBox`
 const messageBox = document.querySelector('message-box')
 const letterBankHeader = document.querySelector('#letter-bank-header')
 const checkAnswerButton = document.querySelector('#check-answer-button')
@@ -30,6 +31,7 @@ const goalWordBank = ['declare', 'elite', 'regulate', 'deficit', 'confirm', 'lit
 let goalWord = goalWordBank[Math.floor(Math.random()*(goalWordBank.length))]
 let goalWordArrayBlanks = goalWord.split('')
 let goalWordArray = goalWord.split('')
+// Magic Numbers should be in all caps and in snake case
 let guessCount = 0
 
 const randomizeLetter = () => {
@@ -45,6 +47,7 @@ const randomizeLetter = () => {
     randomLetterTen.innerHTML = possibleLetters[Math.floor(Math.random() * possibleLetters.length)]
 }
 
+// this code block could use some blank line and some comments
 const addGoalLetters = () => {
     for(i = 0; i < goalWord.length; i++) {
         let goalLetter = goalWordArray[i]
@@ -97,68 +100,77 @@ playButton.addEventListener('click', () => {
 })
 
 randomLetterOne.addEventListener('click', () => {
-    let letterOneValue = randomLetterOne.innerText
-    if(goalWordArray.indexOf(letterOneValue) !== -1 ) {
-        document.getElementById('message-box').innerHTML = 'That was a correct letter!'
-        for(i = 0; i <= goalWordArrayBlanks.length; i++) {
-            if(goalWordArray[i] === letterOneValue) {
-                goalWordArrayBlanks.splice(i, 1, letterOneValue)
-                goalWordContainer.innerHTML = goalWordArrayBlanks.join(' ')
-            }
-        }
-    }else {
-        randomLetterOne.style.color = 'red'
-        guessCount++
-        document.getElementById('message-box').innerHTML = 'That was not a correct letter'
-        if(guessCount === 1){
-            helmet.style.display = 'block'
-        }else if(guessCount === 2) {
-            stickBody.style.display = 'block'
-        }else if(guessCount === 3) {
-            leftArm.style.display = 'block'
-        }else if(guessCount === 4) {
-            rightArm.style.display = 'block'
-        }else if(guessCount === 5) {
-            leftLeg.style.display = 'block'
-        }else if(guessCount === 6) {
-            rightLeg.style.display = 'block'
-            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
-        }
-    }
+	// this code block could use some blank line and some comments
+	let letterOneValue = randomLetterOne.innerText
+	if (goalWordArray.indexOf(letterOneValue) !== -1) {
+		document.getElementById('message-box').innerHTML =
+			'That was a correct letter!'
+		for (i = 0; i <= goalWordArrayBlanks.length; i++) {
+			if (goalWordArray[i] === letterOneValue) {
+				goalWordArrayBlanks.splice(i, 1, letterOneValue)
+				goalWordContainer.innerHTML = goalWordArrayBlanks.join(' ')
+			}
+		}
+	} else {
+		randomLetterOne.style.color = 'red'
+		guessCount++
+		document.getElementById('message-box').innerHTML =
+			'That was not a correct letter'
+		if (guessCount === 1) {
+			helmet.style.display = 'block'
+		} else if (guessCount === 2) {
+			stickBody.style.display = 'block'
+		} else if (guessCount === 3) {
+			leftArm.style.display = 'block'
+		} else if (guessCount === 4) {
+			rightArm.style.display = 'block'
+		} else if (guessCount === 5) {
+			leftLeg.style.display = 'block'
+		} else if (guessCount === 6) {
+			rightLeg.style.display = 'block'
+			document.getElementById('message-box').innerHTML =
+				'Oof, not this time. Maybe stop coding so much and go read a book'
+		}
+	}
 })
 
 randomLetterTwo.addEventListener('click', () => {
-    let letterTwoValue = randomLetterTwo.innerText
-    if(goalWordArray.indexOf(letterTwoValue) !== -1 ) {
-        document.getElementById('message-box').innerHTML = 'That was a correct letter!'
-        for(i = 0; i <= goalWordArrayBlanks.length; i++) {
-            if(goalWordArray[i] === letterTwoValue) {
-                goalWordArrayBlanks.splice(i, 1, letterTwoValue)
-                goalWordContainer.innerHTML = goalWordArrayBlanks.join(' ')
-            }
-        }
-    }else {
-        randomLetterTwo.style.color = 'red'
-        guessCount += 1
-        document.getElementById('message-box').innerHTML = 'That was not a correct letter'
-        if(guessCount === 1){
-            helmet.style.display = 'block'
-        }else if(guessCount === 2) {
-            stickBody.style.display = 'block'
-        }else if(guessCount === 3) {
-            leftArm.style.display = 'block'
-        }else if(guessCount === 4) {
-            rightArm.style.display = 'block'
-        }else if(guessCount === 5) {
-            leftLeg.style.display = 'block'
-        }else if(guessCount === 6) {
-            rightLeg.style.display = 'block'
-            document.getElementById('message-box').innerHTML = 'Oof, not this time. Maybe stop coding so much and go read a book'
-        }
-    }
+	// this code block could use some blank line and some comments
+	let letterTwoValue = randomLetterTwo.innerText
+	if (goalWordArray.indexOf(letterTwoValue) !== -1) {
+		document.getElementById('message-box').innerHTML =
+			'That was a correct letter!'
+		for (i = 0; i <= goalWordArrayBlanks.length; i++) {
+			if (goalWordArray[i] === letterTwoValue) {
+				goalWordArrayBlanks.splice(i, 1, letterTwoValue)
+				goalWordContainer.innerHTML = goalWordArrayBlanks.join(' ')
+			}
+		}
+	} else {
+		randomLetterTwo.style.color = 'red'
+		guessCount += 1
+		document.getElementById('message-box').innerHTML =
+			'That was not a correct letter'
+		if (guessCount === 1) {
+			helmet.style.display = 'block'
+		} else if (guessCount === 2) {
+			stickBody.style.display = 'block'
+		} else if (guessCount === 3) {
+			leftArm.style.display = 'block'
+		} else if (guessCount === 4) {
+			rightArm.style.display = 'block'
+		} else if (guessCount === 5) {
+			leftLeg.style.display = 'block'
+		} else if (guessCount === 6) {
+			rightLeg.style.display = 'block'
+			document.getElementById('message-box').innerHTML =
+				'Oof, not this time. Maybe stop coding so much and go read a book'
+		}
+	}
 })
 
 randomLetterThree.addEventListener('click', () => {
+    // this code block could use some blank line and some comments
     let letterThreeValue = randomLetterThree.innerText
     if(goalWordArray.indexOf(letterThreeValue) !== -1 ) {
         document.getElementById('message-box').innerHTML = 'That was a correct letter!'
@@ -168,6 +180,7 @@ randomLetterThree.addEventListener('click', () => {
                 goalWordContainer.innerHTML = goalWordArrayBlanks.join(' ')
             }
         }
+        // very crowded here with the if and else if blocks
     }else {
         randomLetterThree.style.color = 'red'
         guessCount += 1
@@ -417,13 +430,5 @@ checkAnswerButton.addEventListener('click', () => {
 })
 
 
-
+// remove console log
 console.log(guessCount)
-
-
-
-
-
-
-
-
